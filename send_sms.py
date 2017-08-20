@@ -5,7 +5,7 @@ auth_token  = "609b95182a0cd8b4efa8aecd5329764f"  # Your Auth Token from www.twi
 
 client = TwilioRestClient(account_sid, auth_token)
 
-message = client.messages.create(body="i love you mamma,i knowwwwwwwwwwww you ",
+message = client.messages.create(body="i can see you,i knowwwwwwwwwwww you ",
     to="+918368822963",    # Replace with your phone number
     from_="+19787672510") # Replace with your Twilio number
 
