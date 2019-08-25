@@ -1,6 +1,11 @@
+
+vList = []
+for x in range(0,10):
+    user_input = int(input("enter a number: "))
+    vList.append(user_input)
+
 def ascending():
-    vList=[23,20,18,24,14,9,456,1]
-    print(vList)
+    print("your list" + str(vList))
     for ct in range(1,len(vList)):
         pos=ct
         val=vList[ct]
@@ -9,12 +14,11 @@ def ascending():
             vList[pos]=vList[pos-1]
             pos=pos-1
             vList[pos]=val
-    print(vList)
+    print("ascending order" + str(vList))
 
 
 def descending():
-    vList=[23,20,18,24,14,9,456,1]
-    print(vList)
+    print("your list" + str(vList))
     for ct in range(1,len(vList)):
         pos=ct
         val=vList[ct]
@@ -24,7 +28,7 @@ def descending():
             pos=pos-1
             vList[pos]=val
 
-    print(vList)
+    print("desending order" + str(vList))
 
 ascending()
 descending()

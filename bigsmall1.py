@@ -1,15 +1,15 @@
-import sys
-max1 = -sys.maxint
-min1 = sys.maxint
-for x in xrange(1,10+1):
+max1 = -100000000000000000
+min1 = 100000000000000000
+for x in range(1,10+1):
 	print ("please enter a number from: " + str(x))
-	user_input = int(raw_input())
+	user_input = int(input())
 
 	if user_input < min1:
 		min1 = user_input
 
 	if user_input > max1:
 		max1 = user_input	
+
 
 print ("bigest number is " + str(max1))
 
