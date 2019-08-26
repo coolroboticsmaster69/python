@@ -1,5 +1,8 @@
-a_list=[12,34,24,45,67,14,78,79,89,98,76,54,32,10]
+a_list=[]
 multiply=1
+for x in range(0,13):
+    user_input = int(input("please enter a number: ")) 
+    a_list.append(user_input)
 for cn in range(0,len(a_list)-1):
     cnn=a_list[cn]
     print(cnn)
