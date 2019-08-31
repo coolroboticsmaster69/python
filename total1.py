@@ -1,6 +1,6 @@
 print ("enter input number : ")
 
-input1 = int(raw_input())
+input1 = int(input())
 
 sum1 = 0
 product = 1
