@@ -7,12 +7,15 @@ for r in range(1,rows+1):
     rowList = []
     newNum = 1
     for c in range(1, r+1):
-      newNum = 1
-      if c!=1 and c!=r:
-          lasrowlist=numbersList[r-2]
-          newNum = lasrowlist[c-2] + lasrowlist[c-1]
-      rowList.append(newNum)
-      pasNum = pasNum + str(newNum) + " "
+
+        newNum = 1
+        if c != 1 and c != r:
+
+            lastdot = numbersList[r - 2]
+            newNum = lastdot[c - 2] + lastdot[c - 1]
+        rowList.append(newNum)
+        pasNum = pasNum + str(newNum) + " "
     numbersList.append(rowList)
     print(pasNum)
-#print(numbersList)
+# print(numbersList)
+
